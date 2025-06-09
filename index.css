@@ -16,19 +16,25 @@ header.banner {
 
 .banner-img {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: cover;
-  opacity: 0.85;
+  opacity: 0.95;
+  border-bottom: 3px solid #0af;
 }
 
 .headshot-container {
-  margin-top: -60px;
+  margin-top: -70px;
+  display: flex;
+  justify-content: center;
 }
 
 .headshot {
   width: 120px;
+  height: 120px;
   border-radius: 50%;
   border: 4px solid white;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 h1 {
@@ -37,8 +43,9 @@ h1 {
 }
 
 .tagline {
-  font-style: italic;
-  color: #f1f1f1;
+ font-size: 1.1rem;
+ color: #003f5c; 
+ margin-top: 0.5rem;
 }
 
 .social-links {
