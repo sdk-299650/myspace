@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const tracks = [
+    { title: "🔥 SDK's Intro Theme", src: "Intro.mp3" },
     { title: "Dreamscape", src: "assets/track1.mp3" },
     { title: "Late Night Drive", src: "assets/track2.mp3" },
     { title: "Lo-Fi Vibes", src: "assets/track3.mp3" }
