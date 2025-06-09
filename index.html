@@ -53,14 +53,19 @@
     </section>
 
     <section class="music">
-      <h2>My Space, My Vibe</h2>
-      <p>This 45-second intro track sets the tone. Made by me, for this site. 🎶</p>
-      
-      <button id="play-btn">▶️ Play My Theme</button>
-  <audio id="bg-music">
-    <source src="intro.mp3" type="audio/mpeg" />
+  <h2>My Space, My Vibe</h2>
+  <p id="track-info">Now Playing: </p>
+
+  <audio id="audio-player">
+    <source type="audio/mpeg" />
     Your browser does not support the audio element.
   </audio>
+
+  <div class="controls">
+    <button id="prev">⏮️</button>
+    <button id="play">▶️</button>
+    <button id="next">⏭️</button>
+  </div>
 </section>
     
   </main>
