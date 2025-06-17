@@ -46,3 +46,27 @@ document.addEventListener("DOMContentLoaded", () => {
   prevBtn.addEventListener("click", playPrev);
 });
 
+document.addEventListener('DOMContentLoaded', function() {
+  const dropdown = document.querySelector('.custom-dropdown');
+  const button = dropdown.querySelector('.dropdown-btn');
+  const content = dropdown.querySelector('.dropdown-content');
+
+  button.addEventListener('click', function() {
+    dropdown.classList.toggle('open');
+  });
+
+  content.querySelectorAll('div').forEach(item => {
+    item.addEventListener('click', function() {
+      button.textContent = this.textContent;
+      dropdown.classList.remove('open');
+      // Optionally: console.log(item.dataset.value);
+    });
+  });
+
+  document.addEventListener('click', function(e) {
+    if (!dropdown.contains(e.target)) {
+      dropdown.classList.remove('open');
+    }
+  });
+});
+
